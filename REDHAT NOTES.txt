@@ -1,0 +1,680 @@
+SYSTEM ADMINISTRATOR:-
+==================================
+-->The main Aim of system administrator  is to create server , manage server and configure the server.
+-->In this RHCSA(Redhat certified system administration) , they develop the trouble shooting skills for a system administrator.
+-->Server is a software system that provides various services,data and resources to other computers known as clients via internet.
+=================================================================================================================================================================
+INTRODUCTION:-
+====================
+--->linux is a case sensitive .
+--->Linux actually means the kernel of the system, which is the sole controller of whatever happens on the computer system.
+--->The kernel enables multiple applications to share hardware resources by providing access to CPU, memory, disk I/O, and networking.
+--->linux  is developed by linus torvalds in the year 1991 and redhat is invented by marc ewing in the year 1994.
+--->redhat linux is completely open source network.
+--->open source in the sense we can modify the kernel and all other applications , more over it is a free of cost and anyone can use it anywhere in the world.
+--->Redhat linux is a open source linux operating system and moreover  it is a company , typical technology to learn and it provides subscriptions. 
+--->Also It provides applications to the software development tools.
+--->"4" years back redhat is adopted by "IBM" Company.
+--->unix and windows is completely closed source network ->developed by open network group.
+-->Pupet server:-puppet server is a ruby and clojure application runs on java virtual machine.
+==================================================================================================================================================================
+-->what is redhat
+-->what is linux.
+-->what is windows
+-->what is the difference b/w linux and windows
+-->what are the advantages of redaht linux
+-->what are the applications and services provided by redhat
+==========================================================================
+--->LINUX:-linux is unix-like open soruce operating system.linux is packaged as the linux distribution which contains supporting libraries and  KERNEL ETC..,around 600+ flavours are in linux. 
+--->REDHAT:- it is an open source linux operating system ,which provides applications to develop software tools and also provides many services and it is typical techology to learn.it is a company.
+--->WINDOWS:- it is an user friendly operating system which acts as interface between computer hardware and user, also  it is a graphical operating system developed by microsoft.
+--->difference b/w linux and windows :- 
+    linux                                        windows
+   ------------                                -------------
+  ->open soruce                             -->closed soruce
+  ->free of cost                            -->not for free of cost
+  ->secure                                  -->insecure
+  ->low hardware cost                       -->high harwdare cost
+==================================================================================================================================================================
+OPERATING SYSTEM:-
+=============================
+--->It act as interface between user and a computer hardware.
+--->READHAT is also a one type of operating system.
+--->Os is also called as system software.
+--->MAC os is compliant os of unix.
+=================================================================================================================================================================
+VERSIONS OF REDHAT LINUX:-
+==============================
+--->Redhat Fedora- desktop version
+--->RHEL(redHat enterprise Linux) - server version
+--->centos- CD version -continuous delivery version but currently redhat ban the services of centos
+==================================================================================================================================================================
+VERSIONS OF WINDOWS:-
+========================
+-->windows desktop versions are windows10,windows11,..
+-->windows server versions are win 2016,2019,2020,2022..
+-->operating system->server version 
+=================================================================================================================================================================
+BASIC COMMANDS OF LINUX:-
+=============================
+-->who
+-->whoami
+-->date
+-->time
+-->cal->calender
+-->history
+-->To create a file
+  --> cat > filename
+  --->touch filename (it is used to show the time when we open the file)
+-->To see content of the file
+   ---> cat filename
+-->To modify content file
+   -->cat >> filename
+-->To copy one file to another
+   ---> cp filename filename1
+-->TO move one file to another or for hiding the file.
+    --->mv filename1 filename2
+-->find filename -->it is used to find a file who path is not known or defined.
+-->Disadavantages of move command:-
+  =================================
+     -->There will be "NO UNDO" feature to the mv command.
+     -->There will be  "NO PROGRESS INDICATOR" for mv commmand in linux.
+     -->"OVER WRITING OF FILES".
+  =============================================================================
+-->To create a directory
+    --> mkdir directoryname
+-->To change the directory
+     -->cd directoryname
+-->"$"->standard user->limited access
+-->The Id of standard user starts form '1000'.
+-->"#"->root user->full access.
+-->The Id of root user is "0".
+-->pwd (it shows present/print  working directory)
+-->pwsh -->it is used to login for linux power shell
+-->ls ->it shows list of files and directory's.
+-->ls -l or ll or ls -l  filename or ls -ld  directory path ->it shows long list of files and directorys in ascending order.
+--->ls path(ex:/etc)
+-->To move files form one location to another Location :-  cp source file/destination file.
+-->"echo" is used to print the message what we have given.
+==================================================================================================================================================================
+SHARING CONCEPT WHEN BOTH THE SERVERS OR SYSTEMS ARE IN ONE NETWORK:-
+====================================================================
+--->first open the start menu and search for sharing and then open it ,now turn on all the private,public and all networks and turn of password protection and save the changes.
+--->now create one folder or select one folder and copy one file in to it, if there is no files int it,if there are files no need to copy ,after that right click 
+    on that folder and goto propeties and select sharing amd give full control for everyone.
+--->Now in cmd type "ipconfig" and sned your ip address to all then they can access that sahred folder.
+---->here the main point is the users must connect to same network.
+==================================================================================================================================================================
+CLIENT-SERVER ARCHITECTURE:-
+==================================
+-->Client-server is a important model in linux as well as in cloud computing.
+-->Client-server is about a client interacts and make a requests to a computer server.
+-->Here both client and server  connect through a network called internet.
+-->client-->the person who request the services from the server or the person who access the services provided by server.
+-->server-->the server looks for the services requested by client and it will provide those services to the client.
+==================================================================================================================================================================
+GRAPHICAL USER INTERFACES (GUI) IN LINUX ENVIRONMENT:-
+===================================================
+-->In graphical mode, The actual applications live in windows that we can resize and move around according to our needs. we have the menu and tools to help us find what we’re looking for.
+-->The GUI'S we are going to use are 
+     -->GNOME
+     -->KDE
+==================================================================================================================================================================
+COMMAND LINE INTERFACES (CLI) IN LINUX ENVIRONMENT:-
+======================================================
+-->The Command Line Interface (CLI), is a non-graphical, text-based interface to the computer system, where the user types in a command and the computer then successfully executes it.
+TYPES:-
+=======
+-->korne shell
+-->Zshell
+-->bourne shell
+-->bash(born again shell) -->mostly used.
+==================================================================================================================================================================
+COMMANDS IN CENTOS:- 
+=============================
+--->after power on 
+--->first go to ctrl+alt+f4,f5,f6 and enter the username after that enter password 
+---->now type sudo su after that enter password and then enter passwd root
+---->now create new password to the user.
+---->cal
+---->date
+---->history
+---->cat > filename
+---->cat filename
+---->time
+---->ls
+---->ls -l or  ll or ls -l particualr filename
+---->who
+---->whoami
+---->|-->root tag
+---->cat > passwd(file created)
+---->cat passwd(to view content of the file)
+---->head passwd(shows first 10 lines inthe file content)
+---->tail passwd(shows last 10 lines inthe file content)
+---->head -n 3 filename(first three lines) -->here head ->comand, -n 3 -->argument , filename -->opiton
+---->head -n 2 filename(first two lines)
+---->tail -n 3 filename(last three lines)
+---->tail -n 2 filename(last two lines)
+---->tail or head are called as commands.
+---->-n 5 or  -n 20 are called as arguements.
+---->/etc/passwd ->called as option.
+---->less filename(to see top line to middle lines of the file)
+WORD COUNT INTHE FILE CONTENT RELATED COMMANDS:-
+==================================================
+syntax:wc filename
+---->wc -l filename(no.of lines)
+---->wc -w filename(no.of words)
+---->wc -c filename(no.of characters)
+---->wc -w -c filename(no.of words and characters)
+---->ls -l|more-->shows page wise.
+---->ls -l p*-->shows no.of files that start with p.
+---->ls -l *p -->shows no of files that ends with p.
+---->ls -l [!p]* -->that should not end with character p.
+---->ls -l *p* -->contains all characters as "p".
+---->pwd(print working directory or folder).
+---->exit -->this command is used to exit from root user and converted in to standard user.
+---->the blinking operator in the shell is called prompt.
+---->"/etc" contians the configuration files.
+---->"f1 to f6" keys are called virtual keys or functional keys.
+---->"/" is the starting directory of file heirarchy.
+---->"/root" is the home directory of root user.
+---->"/home" is the home directory of standard user.
+---->history |more (it shows the no.of commands excuted in a pagewise).
+---->!(number)-->to see particular command in the history.
+---->cd -(it will show the present and previous directorys).
+---->ctrl+c is used to kill the process.
+---->ls -lR(to see files in a directories). 
+---->ls -lr -->IT WILL DISPLAY THE LONG LIST OF FILRS AND DIRECTORIES IN REVERSE ORDER OR DESCENDING ORDER.
+---->ls -ld
+---->ls --lr|more(page wise)
+---->ls --lR|more(page wise)
+==================================================================================================================================================================
+MANUAL PAGE RELATED COMMANDS:-
+=================================
+---->USING this man related commands we can get more information about that commands.
+---->man ls(to get manual pages)
+---->man cat.
+---->ls -la(to see long listing files with hidden files).
+---->ls -lt
+---->man ls -lr
+---->man ls -lR.
+---->man ls  -la.
+----->man ls -ld 
+---->man ls -lt.
+---->shutdown (it will poweroff entire centos)
+---->mkdir -p aec/cse(first we have to create the aec directory and then create cse directory) or mkdri -p /directory1/directory2. -->to create sub driectories
+---->cd aec and then type ls -l-->then you will see the cse directory.
+---->rm -rf directoryname or rmdir directory name(to delete the directory without any conformation)
+---->(.)->represents existing directory
+---->cp -r ~/directory1/directory2 .
+---->touch filenames -->this command is used to create many files at a time.
+==================================================================================================================================================================
+LINKS:-(to create multiple links)
+===================================
+-->There are two types of Links they are soft link and hard link.
+-->These links only applicable for files.
+===================================
+-->command to create hard Link:-
+=================================
+-->create a file1.
+-->create a directory and create a file in that position.
+-->The hard link is nothing but it will link already existing file data to the new file without any changes.
+-->execute the command now-->(ln original file path  ~/existing file path).
+--->to see the inode value of the file ,exectue` the command -->(ls -li filename).
+-->Inode values means each file or directory having unique id number.
+==================================================================================================================================================================
+-->command to create soft link:-
+==================================
+--->first create a file.
+--->create a directory
+--->exectur the command ->>(ln -s file1 ~/directory name).
+-->soft links are also called as symbolic Links.
+================================================================================================================================================================
+EDITORS:-
+==================
+-->There are  three types of Editors in  linux, the are:
+ 1.vi
+ 2.vim
+ 3. nano editor
+================================================================================================================================================================
+VIM EDITOR:-
+===============================================================
+---->vim filename -->TO CREATE A FILE IN VIM EDITOR.
+---->press "i" -->insert mode
+---->press "escape" to exit from insert mode also called as command mode.
+---->press "shift+: " and press wq to write and quit.
+----> if you dont want to save the file then press ":q!".
+---->we can repeat the same process many times.
+---->to view the content press "v" after exit from insert mode.
+---->vimtutor-->to know entire descrption .
+---->:set nu -->this command assign numbers to the content lines in the file.
+---->gcc filename.c -->to compile the code
+---->./a.out -->to run the code.
+================================================================================================================================================================
+NANO EDITOR:-
+=================
+-->nano filename 
+-->there is no insert mode in nano.
+==================================================================================================================================================================
+processes related commands:
+=================================
+--->ps command to see the no.of currently running process or process status.
+--->ps -a  	
+--->ps -au
+--->ps -u
+==================================================================================================================================================================
+--->cat /etc/passwd
+--->cat /etc/shadow
+--->cat /bin/bash
+--->To switch from one user to other just excute the command "su username".
+-->system users 1-999(ids)
+-->standard users (from 1000 onwards ids will be start..)
+-->interactive login(/bin/bash) (root,standard users)
+-->system users (/bin,/sbin/no login)
+-->standard users = system users
+==================================================================================================================================================================
+USER AND GROUP MANAGEMENT CONCEPT:-
+===========================================================
+---->"useradd "username" . //To add the user.
+---->"userdel "username" .//To delete the user.
+----> To see the id of a user we use the command (id username).
+---->To give description or canonical name for a user in passwd
+        usermod -c "desc" username
+---->ex:usermod -c "hello redhat training " cse1
+---->In passwd it changes the description of the particular user(which we have mentioned)
+--->groupadd <gropu name>.//To add the group
+---->groupdel <groupname>.// To delete the group.
+---->groupdel -f <groupname> // To delete the group frocely.
+---->syntax to add user to the primary group is -->"usermod  -g  <groupname> <username>."
+---->syntax to add user to the secondary group is-->"usermod -aG <groupname> <username>."
+---->usermod -L username //This is to lock the user.
+---->usermod -U username //This is to unlock the user.
+---->cd /etc/sudoers.d
+/*(now create one file with same name as the group and give the permissions  %cse	ALL=(ALL)	ALL)
+(now switch to any one of the user that we added to the the group (su - username))
+(now try to create the new user by using (sudo useradd useraname))permissions are granted.*/
+---->To change or modify the userid foloow the syntax --->"usermod -u newid username"-->id username
+---->To change or modify the group id follow the syntax -->"groupmod -g newid groupname"-->id username.
+---->To change group name follow the syntax-->groupmod -n "new name for existing group name" actual-group-name.
+---->(su - username)-->directly it will show the home directory.
+---->passwd --stdin username -->to set password for the users.
+==================================================================================================================================================================
+TIME ZONES:-
+==============================================
+-->timedatectl-->it will show day ,time ,date.
+-->timedatectl list-timezones-->multiple timezones.
+-->timedatectl list-timezones|more -->to see timezones pages wise.
+-->timedatectl list-timezones|grep Asia.
+-->timedatectl set-timezone Asia/Kolkata.
+-->timedatectl set-time HH:MM::SS.
+-->date --set HH:MM:SS
+-->date --set yyyy-mm-dd
+==================================================================================================================================================================
+ENCRYPTED PASSWORD OR DETAILED INFO OF A USER:-
+==========================================================================
+-->/etc/shadow file contains more about the all local users information.
+-->vim /etc/shadow-->open the shadow file in edit mode . 
+-->1.it contains username
+-->2.it contains password policy or encypited password.
+-->4.minimum password age-by default(0).
+-->5.maximum password age-(99999)-->it doesnt expire.
+-->3.after changing the user password ,now goto vim /etc/shadow and observe the no.of days after last password change.
+--->6.last one shows no.of inactive days.
+-->chage -m 0 -M 30 -W 7 -I 7(m->minimum age,M->maximum age,W->warning after how many days password expires,I->no.of inactive days).
+==================================================================================================================================================================
+FILE/DIRECTORY PERMISSIONS:-
+===============================================================================================================
+---->User permissions override the group permissons and group permisssions override the other permissions.
+---->r->read permission
+---->w->write permission
+---->x->execute permission
+---->d-> directory
+---->r-x-> Having read and execute permission.
+---->rw --> Having read write permission
+---->"chmod" command is used to give the permissions and this command applys on files and directorys.
+---->"chown" command is used to give the ownership or to change the owner ship .
+---->syntax:-
+   1.chown :groupname /home/directoryname(eg:-sensors)-->we execute this command in "cd /home" directory.
+   2.chown :gropuanme /home/directoryname/filename.
+   3.chmod g(group)+w(write) /home/sensors-->this is for directory.
+   4.chmod (g+w or o+w or u+w) /home/sensors/filename -->>this is for files.
+   5.chgrp groupname path-->chgrp admin /common/admin
+---->in place of giving permissions like g+w,u+w,o+w we can directly follow the below syntax
+   r=4
+   w=2
+   x=1
+eg:-
+    chmod 777 /home/sensors/iot
+    chmod 511 /home/sensors/iot
+    chmod 222 /home/sensors/iot
+ ---> "umask" default value is 0022.
+ ---> to change the umask value type: umask "number".
+ -->chmod -1777 /home/directory/filename or /home/directory name. -->it will delete all the permissions that a file or directorty having.
+==================================================================================================================================================================
+PROCESS MANAGEMENT:-
+======================================
+--->applications/user
+--->system services/system files
+--->os->system software
+--->resources--memory,cpu,storage
+================================================================================================================================================================
+--->mutli-processing:-
+======================
+--->Four processes we can run in active state at a time.
+==========================
+MULTI TASKING:-
+===================
+-->how many activities or processes we are running without minimizing is nothing but mutli tasking.
+========================================================================================================
+-->multi threading:-
+=============================
+-->thread is a child process under one parent process.
+-->commands realted to process management:-
+====================================================
+  ---> ps
+  ---> ps aux
+  --->ps lax
+  --->top-->we can get all the Details realted to process ,so it is very good command.
+  ---> w-->it will show no of users logedin.
+  --->lscpu
+  --->pgrep -l -u username
+  --->pkill -SIGKILL -u <user> -->it will logout the user forcely fully by sending killsignal.
+==================================================================================================================================================================
+  -->SSH-secured shell
+  -->folowing are the protocols for remote connections.
+       ->ssh-linux,unix ->fully encrypted
+       ->telnet
+        ->rlogin
+        ->rdp
+==================================================================================================================================================================
+ -->IP(INTERNET PROTOCOL) AND PORT NUMBER:-
+=========================================
+ --->ipsocket -->ipaddress + portnumber
+ --->over the world there are 65536 port numbers are in use.
+ --->ssh-->22 port number
+ --->telent-->23 port number-->telent is something where communication happens in a plain text->it doesn't have encrypted fromat..
+ --->rdp->remote desktop protocol ->secured connection for windows desktop ->3368.
+ --->80 port number is unsecur and 443 is secure.
+ --->To see ip address in windows got cmd and type ipconfig->but it is not used in linux.
+ --->To see ip address in linux got to whatever the linux you have and type "ifconfig".
+ --->to ping one ip address to other just type "ping ip address ". 
+ --->ping is the command to check connectivity
+ --->"yum update"->This is used to install the updates.
+ --->"dnf update"-->This is also same as yum update.
+==================================================================================================================================================================
+SYSTEM SERVICES AND SOFTWARE UPDATES(CONTROL SERVICES AND DEAMONS):-
+===========================================================================
+---->"systemctl" ->This command deals with the system services.
+---->"systemctl status ssh" or "systemctl status sshd" -->checks whether system installaed ssh or not.
+---->If ssh is not installed in system then excute the coomand -->"dnf or yum install openssh".
+---->To stop the sshd service -->"systemctl stop sshd".
+---->Again to start the sshd service-->"systemctl start sshd".
+---->"systemctl enable sshd".
+---->"systemctl disable sshd".
+---->"systemctl restart sshd".
+---->"systemctl reload sshd".
+---->"systemctl" -->shows number of services.
+---->"systemctl is ".
+---->"systemctl is-active sshd" -->tells whether the service is active or not
+---->"systemctl is-inactive sshd" -->tells whether the service is inactive or not
+---->"systemctl is-failed sshd"
+---->"systemctl restart NetworkingManager".
+---->d-->refers to deamon.
+---->"dnf install package name".
+---->dnf install httpd"-->httpd is a web service.
+---->the original name daemons is berkley named daemon.
+==================================================================================================================================================================
+ANALYZE AND STORE LOGS:-
+==============================
+---->GO TO THE PATH -->cd /var/log/filenames 
+---->/var/log/meassages
+---->/var/log/boot.log
+---->/var/log/secure
+----> /var/log/maillog
+==================================================================================================================================================================
+MANAGE NETWORKING IN LINUX:-
+=============================================
+---->lan card ---- eth(ethernet)
+---->command : hostname
+---->Two ways of assigning hostname:
+      ->temporary and permanent
+---->Temporary way:-
+       command:hostname "ajay.technical.io"
+---->After restarting names will be disappear.
+---->permanent way:-
+        hostnamectl
+        command : hostnamectl set-hostname "ajay.technicalhub.io"
+---->"uname " -->tells what is our operating system. eg:linux.
+---->"uname -a" --->deatiled information.
+---->"uname -r" -->shows kernal version
+---->"ip a " or  "ip address" or "ifconfig(interface configuration" -->shows ip address
+---->"ens160-->ethernet socket 160", "eno->ethernet on board","lo-->loop back address starts from 127.0.0.1" -->these are two interfaces.
+---->command:tracert "website(www.aec.edu.in)"  -->in command prompt
+---->command:tracepath "website(www.technicalhub.com)" -->in linux 
+==================================================================================================================================================================
+CONFIGURE NETWORKING FROM COMMAND LINE:-
+=================================================
+---->command:"nmcli" (network managing through command line).
+---->"nmcli dev status"-->physical one
+---->"nmcli connection or con  show"  --->shows how many con are there.
+---->"nmcli connection or con delete con-name"  -->shows connection status up/down.
+---->"nmcli con up connection-name".   --->turn connection to up/active.
+---->"nmcli con add con-name "name" type ethernet ifname "ens160". --->//to add a connection.
+---->"nmcli connection or con add con-name "name(static)" type ethernet ifname ens160 ipv4.addresses "give oneip" ipv4.gateway "give the gateway" autoconnect no.         -->to add connection and give ip manually.
+---->nmcli con down con-name
+---->nmcli con show --active
+---->nmcli con mod ipv4 192.168.10.1/24
+---->nmli con reload con-name.
+---->nmli con load con-name.
+==================================================================================================================================================================
+MODULE-2:-
+======================================================================================================
+   PARTITIONING:-
+==========================
+-->lsblk -->shows list of partitions.
+-->fdisk /dev/sda
+     -->  n //to create new partition -->there are two types of partitions they are:primary and extended -->by default it will take primary.
+       -->  w   write table to disk and exit
+       -->  q   quit without saving changes
+       -->  p    print the partition table
+       -->  d    delete the partition
+-->mkfs(make file system) -t ext4 /dev/partition name or  mkfs.ext4 /dev/partition name-->formatting the partition.
+-->blkid -->block id
+-->df(disk free) -h /root/directoryname/
+--> for temporary mounting perform the following process
+     -->first create a directory -->mkdir directoryname
+     -->now perform "mount /dev/partitionname  /root/directoryname
+-->unmount /dev/partitionname.
+-->for permanent mounting:-
+    -->vim /etc/fstab
+    -->/dev/sda2 <tabspace>  /root/thubserver <tab> ext4
+       <tab> defaults <tab> 0 <space> 0
+  -->mkswap /dev/sda2
+-->swapon   /dev/sda2
+-->swapoff  /dev/sda2
+-->swaplabel /dev/sda2
+-->free -h   -->shows total memory space.
+=====================================================================================================
+SCHEDULE FUTURE TASKS:-
+==========================
+-->there are two shecdulers they are :
+          -->"ATQ JOB" -->"CRONTAB JOB"
+-->"atq" ->sohws the jobs in  q.
+-->"atqrm"-->this command is used to remove deffered userjob.
+-->"crontab -lu "username" " -->list the jobs for the cuurent user.
+-->"crontab -ru "username"  "--->remove all jobs for the current user.
+-->"crontab -eu  "username" " -->to edit jobs for the cureent user.
+-->"/etc/cron.daily" -->to the cron job daily.
+-->The fields in the crontab file appear in the following order:
+
+Minutes
+
+Hours
+
+Day of month or day
+
+Month
+
+Day of week or week day
+
+Command
+----->"15 12 11 * Friday" -->example
+=============================================================================
+SELINUX(security enhanced linux) PROTECTS RESOURCES:-
+=============================================================
+-->"sestatus" -->shows the status of the selinux.
+-->"setenforce 0" and "getenforce"-->the current mode changes to permissive.
+-->"setenforce 1" and "getenforce"-->the current mode again changes to enforcing.
+-->"vim /etc/selinux/config" -->to make the current modes either enforcing or permissive or disable the selinux permanently.
+-->"ls -Z file path" -->to see the context of each and every selinux file.
+Manage the policy boolean:-
+------------------------------
+-->"semanage fcontext -l" -->to see all the context of selinux files.
+-->"getsebool -a"
+-->"getsebool object name";
+-->"semanage boolean -l | grep httpd_enable_homedirs(object name)"
+-->"semanage port -l | grep http"
+-->"semanage port -a -t http_port_t -p tcp "port number" 
+-->"setsebool httpd enable homedirs(object name) on"
+-->"semanage boolean -l -C" -->description.
+====================================================================================
+CONTROL BOOT PROCESS:-
+======================================
+-->INIT 0 = "shutdown" or "halt"
+-->INIT 1 ="single user"
+-->INIT 2 ="multi user with no NFS(network file system)"
+-->INIT 3 ="multi user with NFS" or "Full multiuser mode"
+-->INIT 4="NOT DEFINED".
+-->INIT 5="multi user with NFS and GUI" or x11.
+-->INIT 6="restart" or "reboot"
+-->"systemctl poweroff" -->stops the all running services.
+-->"systemctl reboot"--->stops the all running services and unmount all processes.
+-->"systemctl get-default" -->shows the default target(graphical,multi-user,rescue,emergency)
+-->"systemctl set-default multi-user.target"-->to change the default target.
+-->"systemctl isolate multi-user.target"
+   --------------------------------------------------------------------------
+  6 STAGES IN LINUX BOOT PROCESS:-
+  =========================================================
+  MANAGE NETWORK SECURITY:-(firewall-cmd commands)
+  ===================================================
+  -->"firewall-cmd --get-default-zone"-->query the current zone.
+  -->"firewall-cmd --get-zones"--->list all available zones.
+  -->"firewall-cmd --set-default-zone=zone name(eg:-home)"-->changes both default and permanent configuration.
+  -->"firewall-cmd --get-active-zones" -->list all cuurently using zones.
+  -->"firewall-cmd --add-source=CIDR[--zone=zone name]"
+  -->"firewall-cmd --remove-source-CIDR[--zone=zone]"
+  -->"firewall-cmd --list-all"-->List all configured interfaces, sources, services, and ports for ZONE. 
+  -->"firewall-cmd --list-all-zones"
+  -->"firewall-cmd --add-service=SERVICE Name"
+  -->"firewall-cmd --remove-service=SERVICE Name"
+  -->"firewall-cmd --add-port=(portnumber)/(protocol) (eg:- 450/tcp)" 
+  -->"firewall-cmd --remove-port=(portnumber)/(protocol)" 
+  -->"firewall-cmd --permanent --add-port=portnumber/protocol"  -->adds port to the firewall permanently.
+  -->"firewall-cmd --reload" 
+  -->"semanage port -l"
+  -->"semanage port -l|grep service name(eg:-ftp)"
+  -->"semanage port -l - C"
+===============================================================================================================================================================
+REDHAT CERTIFICATION EXAM ANSWERS:-
+=====================================
+  -->vi /etc/yum.repos.d/local.repo -->this is used to create repositories
+       -->name=""
+       -->baseurl="url"
+       -->gpgcheck=0
+       -->enabled=1
+ -->dnf clean all
+ -->dnf repolist all
+ -->dnf install vim -y
+ -->mkdir -p /common/admin
+ -->passwd --stdin "username"
+ -->chgrp admin /common/admin
+ -->chmod  g+s /common/admin/f1
+ -->NTP stands for network time protocol.
+ configure NTP:-
+-->vim /etc/chrony.conf
+    -->keep commemnt for the ip address line and add new line "server classroom.example.com iburst"
+-->systemctl restart chronyd
+-->chronyc sources
+-->mkdir /root/find.user
+-->find / -user sarah -type f
+-->find / -user sarah -type f -exec cp {} /root/find.user \;
+-->grep "home" /etc/passwd
+-->grep "home" /etc/passwd > /root/search.txt
+-->Back up /var/tmp as /root/test.tar.gz or /root/test.tar.tgz --> -zcvf
+-->back up /var/tmp as /root/test.tar.bz2 or /root/test.tar.tbz2 --> -jcvf
+-->su - natasha
+  -->vim .bash_profile
+      -->umask 277
+   -->source .bash_profile
+   -->umask
+   -->tocuh f1
+   -->mkdir dir
+   -->ls -l
+-->logout
+-->vim /etc/login.defs
+-->vim /etc/suoders
+   %admin ALL=(ALL) NOPASSWD: ALL
+-->su - alies
+-->vim .bash_profile
+   -->rhcsa = "welcome to advantage pro"
+   -->export rhcsa
+   -->echo "$rhcsa"
+-->source .bash_profile
+-->logout
+-->su -alies
+-->logout
+-->mkdir /root/myfiles
+-->vim /usr/local/bin/mysearch
+  -->#!/bin/sh
+      find /usr/share  -type f -size -1M -exec cp {} /root/myfiles/ \;
+      find /usr/share  -type f -size +400k -size -800k -exec cp {} /root/myfiles/ \;
+      find /usr/share  -type f -size -1M -perm /4000 -exec cp {} /root/myfiles/ \;
+      find /usr/sahre  -type f -size -1M -perm /2000 -exec cp {} /root/myfiles/ \;
+ -->chmod +x /usr/local/bin/mysearch
+ -->mysearch
+ -->ls /root/myfiles
+ -->goto workstation and execute the command lab start boot-resetting
+ -->now go to servera or node2 and then click "circle" on left corner
+ -->after come down to second and press "e"
+ -->go tothe linux line end and execute the command "rd.beak" 
+ -->press "ctrl-x"
+ -->press contiune
+ -->mount -o remount,rw /sysroot
+ -->chroot /sysroot
+ -->passwd 
+  --->enter password
+ -->touch /.autorelabel
+ -->exit
+ -->exit
+ -->free -h
+ -->lsblk
+ -->fdisk /dev/vdb
+ -->n,p,1,+512M,t,swap,w
+ -->mkswap /dev/vdb1
+ -->vim /etc/fstab
+     /dev/vdb1  swap  swap  defaults  0 0
+  -->swapon -a
+  -->free -h
+-->rht-vmctl reset all
+-->lsblk
+-->fdisk /dev/vdb
+-->n,p,2,+2G,t,lvm,w
+-->vgcreate -s 8M datastore /dev/vdb2
+-->lvcreate -l 50 -n database  datastore
+-->mkfs.ext3 /dev/datastore/database
+-->mkdir /mnt/database
+-->vim /etc/fstab
+   /dev/datastore/database  /mnt/database ext3  defaults  0 0
+-->mount -a
+-->lsblk
+-->df -hT
+-->lvextend -l 100 -r /dev/mapper/datastore-database 
+-->dnf install tuned -y
+-->systemctl start tuned
+-->systemctl enable tuned
+-->systemctl status tuned
+-->tuned-adm recommend 
+-->tuned-adm profile virtual-guest
+-->tuned-adm active
+-->systemctl restart tuned
+==================================================================================================================================================================
